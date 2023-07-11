@@ -1,0 +1,50 @@
+
+.under-construction {
+    height: 100vh;
+    background: $darkDesaturatedBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    position: relative;
+    padding-top: 14%;
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image: url('../../assets/images/bg-stars.svg');
+        background-size: cover;
+        -webkit-animation-name: STAR-MOVE;
+        -webkit-animation-duration: 200s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background-image: url('../../assets/images/pattern-hills.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+}
+
+@keyframes STAR-MOVE {
+	from {
+		background-position: 5% 5%
+	}
+	to { 
+		background-position: 1300% 600%
+	}
+}

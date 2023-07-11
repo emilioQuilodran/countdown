@@ -1,0 +1,34 @@
+.countdown-timer-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 2%;
+    position: relative;
+    z-index: 1;
+    .card {
+        > div {
+            display: inline-block;
+            &:last-of-type {
+                margin-left: -7px;
+            }
+        }
+        span {
+            font-size: 40px;
+            color: $softRed;
+        }
+        p {
+            color: $GrayishBlue;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.title {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    font-size: 22px;
+}

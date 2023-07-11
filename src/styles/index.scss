@@ -1,0 +1,59 @@
+
+// primary colors
+$GrayishBlue: hsl(237, 18%, 59%);
+$softRed: hsl(345, 95%, 68%);
+
+// neutral
+$white: white;
+$darkDesaturatedBlue: hsl(236, 21%, 26%);
+$darkBlue: hsl(235, 16%, 14%);
+$veryDarkBlue: hsl(234, 17%, 12%);
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2 , h3, h4, h5, h6, p, span {
+  color: $white;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+main {
+  min-width: 100%;
+}
+
+@import './css/constructionPage';
+@import './css/countdown-component';
+
+body {
+  margin: 0;
+  font-family: 'Red Hat Text', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+    
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
