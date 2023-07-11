@@ -1,5 +1,3 @@
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import FlipCard from 'react-countdown-flip-card';
 import { useEffect, useState, useRef } from 'react';
 import dayjs from 'dayjs'
